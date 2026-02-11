@@ -1,0 +1,170 @@
+<div class="main">
+    <div class="inside">
+        <div class="up">
+            <h2>ფილმები</h2>
+            <div>
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="middle">
+        <a
+            *ngFor="let item of movies"
+            [routerLink]="['/', item.type, item.name]"
+            [class]="item.class">
+
+            <div class="card">
+            <img [src]="item.image" alt="Banner">
+
+            <div class="GEO"><span>GEO</span></div>
+            <div class="ENG"><span>ENG</span></div>
+
+            <div class="hover"></div>
+            <div class="button"></div>
+            <i class="fa-solid fa-play"></i>
+            </div>
+        </a>
+        </div>
+        <div class="down">
+            <div class="title" *ngFor="let names of movies" [class]="names.class"><p class="movieN">{{names.name}}</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="main4"> 
+    <div class="inside">
+        <div class="up">
+            <h2>სერიალები</h2> 
+            <div>
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div> 
+        <div class="middle">
+        <a 
+            *ngFor="let item of serials"
+            [routerLink]="['/', item.type, item.name]"
+            [class]="item.class">
+
+            <div class="card">
+            <img [src]="item.image" alt="Banner">
+
+            <div class="GEO"><span>GEO</span></div>
+            <div class="ENG"><span>ENG</span></div>
+
+            <div class="hover"></div>
+            <div class="button"></div>
+            <i class="fa-solid fa-play"></i>
+            </div>
+        </a>
+        </div>
+        <div class="down">
+            <div class="title" *ngFor="let names of serials" [class]="names.class"><p>{{names.name}}</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="main3">
+    <div class="inside">
+        <div class="up">
+            <h2>ანიმაციები</h2>
+            <div>
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="middle">
+        <a
+            *ngFor="let item of animations"
+            [routerLink]="['/', item.type, item.name]"
+            [class]="item.class">
+
+            <div class="card">
+            <img [src]="item.image" alt="Banner">
+
+            <div class="GEO"><span>GEO</span></div>
+            <div class="ENG"><span>ENG</span></div>
+
+            <div class="hover"></div>
+            <div class="button"></div>
+            <i class="fa-solid fa-play"></i>
+            </div>
+        </a>
+        </div>
+        <div class="down">
+            <div class="title" *ngFor="let names of animations" [class]="names.class"><p>{{names.name}}</p></div>
+        </div>
+    </div>
+</div>
+
+<div class="popular">
+    <div class="inside">
+        <div class="up">
+            <h2>პოპულარული ფილმები</h2>
+            <div>
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="middle">
+            <a class="cards" *ngFor="let movie of popularMovies" [class]="movie.class" [routerLink]="['/movies', movie.name]">
+                <img [src]="movie.movieImage" alt="Banner">
+                <div class="hover"></div>
+                <div class="button"></div>
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="popular">
+    <div class="inside">
+        <div class="up">
+            <h2>პოპულარული სერიალები</h2>
+            <div>
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="middle">
+            <a class="cards" *ngFor="let serial of popularSeries" [class]="serial.class" [routerLink]="['/serials', serial.name]">
+                <img [src]="serial.movieImage" alt="Banner">
+                <div class="hover"></div>
+                <div class="button"></div>
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="main2">
+    <div class="inside">
+        <div class="up">
+            <h2>საბავშვო ფილმები</h2>
+            <div>
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="middle">
+        <a
+            *ngFor="let item of funnyMovies"
+            [routerLink]="['/', item.type, item.name]"
+            [class]="item.class">
+
+            <div class="card">
+            <img [src]="item.image" alt="Banner">
+
+            <div class="GEO"><span>GEO</span></div>
+            <div class="ENG"><span>ENG</span></div>
+
+            <div class="hover"></div>
+            <div class="button"></div>
+            <i class="fa-solid fa-play"></i>
+            </div>
+        </a>
+        </div>
+        <div class="down">
+            <div class="title" *ngFor="let names of funnyMovies" [class]="names.class"><p>{{names.name}}</p></div>
+        </div>
+    </div>
+</div>

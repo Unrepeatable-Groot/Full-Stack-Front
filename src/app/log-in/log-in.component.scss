@@ -1,0 +1,44 @@
+.container1 {
+    display: flex;
+    justify-content: center;
+
+    form {
+        margin-top: 50px;
+        width: 500px;
+        text-align: center;
+        margin-bottom: 100px;
+
+        div {
+            margin-bottom: 20px;
+            margin-top: 10px;
+
+            input {
+                margin-top: 8px;
+                border: 3px solid black !important;
+            }
+            textarea {
+                margin-top: 8px;
+                resize: none;
+                height: 100px;
+                border: 3px solid black !important;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 599px) {
+    form {
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 459px) {
+    form {
+        width: 87% !important;
+
+        input {
+            height: 35px;
+        }
+    }
+}

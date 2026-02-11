@@ -1,0 +1,75 @@
+<div class="container-xl" *ngIf="media">
+
+  <div class="mainBox">
+    <div class="left">
+
+      <div class="card">
+        <img [src]="media.image || media.movieImage" alt="Banner">
+        <div class="GEO"><span>GEO</span></div>
+        <div class="ENG"><span>ENG</span></div>
+      </div>
+
+      <div id="left-down">
+        <button>თრეილერი</button>
+      </div>
+    </div> 
+
+    <div class="right">
+      <div class="video">
+        <div class="loading"></div>
+      </div> 
+    </div>
+
+    <div class="bottom">
+      <div class="descriptions">
+        <p><span id="name">{{ media.name }}</span></p>
+        <p><span>წელი: </span>{{ media.date }}</p>
+        <p><span>ჟანრი: </span>{{ media.genre }}</p>
+        <p><span>რეჟისორი: </span>{{ media.director }}</p>
+        <p><span>მსახიობები: </span>{{ media.actors }}</p>
+        <p>
+          <span>მოკლე აღწერა: </span><br>
+          {{ media.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RELATED -->
+  <div class="inside">
+    <div class="up">
+      <h2>
+        {{ type === 'movies' ? 'ფილმები' :
+           type === 'animations' ? 'ანიმაციები' : 'სერიალები' }}
+      </h2>
+      <div>
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+
+    <div class="middle">
+      <a
+        *ngFor="let item of relatedMedia"
+        [routerLink]="['/', type, item.name]">
+        <div class="card">
+          <img [src]="item.image" alt="Banner">
+
+          <div class="GEO"><span>GEO</span></div>
+          <div class="ENG"><span>ENG</span></div>
+
+          <div class="hover"></div>
+          <div class="button"></div>
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </a>
+    </div>
+
+    <div class="down">
+      <div class="title" *ngFor="let item of relatedMedia">
+        <p>{{ item.name }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

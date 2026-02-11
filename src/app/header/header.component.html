@@ -1,0 +1,35 @@
+<header>
+    <div id="left">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <h1>
+                <img src="https://mykadri.tv/templates/mykadri_V2/images/logov2.png" alt="Logo">
+            </h1>
+        </a>
+
+        <nav>
+            <a routerLink="/movies/page/1" routerLinkActive="active">ფილმები</a>
+            <a routerLink="/serials/page/1" routerLinkActive="active">სერიალები</a>
+            <a routerLink="/animations/page/1" routerLinkActive="active">ანიმაციები</a>
+        </nav>
+    </div>
+
+    <label for="Menu">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <input type="checkbox" id="Menu">
+
+    <div id="right">
+       <a href="https://www.facebook.com/Moviesqartulad" target="_blank"><i class="fa-brands fa-square-facebook" id="Facebook"></i><span id="F-Text">Facebook</span></a>
+        <form>
+            <input type="text" placeholder="საძიებო სიტყვა..." required>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a routerLink="/logIn"><i class="fa-regular fa-user" id="Log-In"></i><span id="L-Text">Log-In</span></a>
+
+        <nav id="nav2">
+            <a routerLink="/movies/page/1" routerLinkActive="active">ფილმები</a>
+            <a routerLink="/serials/page/1" routerLinkActive="active">სერიალები</a>
+            <a routerLink="/animation/page/1" routerLinkActive="active">ანიმაციები</a>
+        </nav>
+    </div>
+</header>

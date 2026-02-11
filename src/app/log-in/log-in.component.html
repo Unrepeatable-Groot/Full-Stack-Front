@@ -1,0 +1,31 @@
+<div class="container1">
+    <form (ngSubmit)="onFormSubmit(form)" #form="ngForm">
+        <h1>Create Account</h1>
+        <div class="form-group">
+            <label for="Nick-Name">Enter your Nick-Name</label>
+            <input #NxName = "ngModel" [ngStyle]="{ 'border-color':!NxName.valid && NxName.dirty ? 'red' : 'grey' }"
+            ngModel name="Nick-Name" type="text" placeholder="Enter your Nick-Name" class="form-control" id="Nick-Name" required>
+        </div>
+        <div class="form-group">
+            <label for="">Enter your G-Mail</label>
+            <input pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" ngModel name="email" type="text" placeholder="Enter your G-Mail" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="Number">Enter your Number</label>
+            <input #personalNumber = "ngModel" [ngStyle]="{ 'border-color':!personalNumber.valid && personalNumber.dirty ? 'red' : 'grey' }"
+            ngModel name="Number" type="text" placeholder="Enter your Number" class="form-control" id="Number" required>
+        </div>
+        <div class="form-group">
+            <label for="Password">Enter your Password</label>
+            <input min="8" #password = "ngModel" [ngStyle]="{ 'border-color':!password.valid && password.dirty ? 'red' : 'grey' }"
+            ngModel name="password" type="password" placeholder="Enter your Password" class="form-control" id="Password" required minlength="8">
+        </div>
+        <div class="form-group">
+            <label for="">Leave us a message</label>
+            <textarea ngModel name="message" class="form-control" placeholder="Leave us a message"></textarea>
+        </div>
+        <div class="form-group">
+            <button [disabled]="!form.valid" type="submit" class="btn btn-dark col-md-12 d-block" routerLink="/">Submit</button>
+        </div>
+    </form>
+</div>
