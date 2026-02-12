@@ -13,7 +13,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 80px;
+        width: 80px; 
         height: 80px;
         border-radius: 50%;
         background-color: yellow;
@@ -245,7 +245,7 @@
     }
 }
 @media screen and (max-width: 1400px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         width: 100%;
         height: 520px;
     
@@ -256,7 +256,7 @@
     }
 }
 @media screen and (max-width: 1200px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         .inside {
             width: 1000px;
             .middle {
@@ -290,7 +290,7 @@
     }
 }
 @media screen and (max-width: 1024px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         .inside {
             width: 800px;
             .middle {
@@ -324,7 +324,7 @@
     }
 }
 @media screen and (max-width: 800px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         height: 470px;
 
         .inside {
@@ -343,7 +343,7 @@
     }
 }
 @media screen and (max-width: 680px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         .inside {
             width: 550px;
             .middle {
@@ -377,7 +377,7 @@
     }
 }
 @media screen and (max-width: 550px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         height: 400px;
 
         .inside {
@@ -404,7 +404,7 @@
     }
 }
 @media screen and (max-width: 460px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         height: 450px;
 
         .inside {
@@ -454,7 +454,7 @@
     }
 }
 @media screen and (max-width: 440px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         height: 450px;
 
         .inside {
@@ -468,7 +468,7 @@
     }
 }
 @media screen and (max-width: 370px) {
-    .main, .main2, .main3 {
+    .main, .main2, .main3, .main4 {
         height: 410px;
 
         .inside {

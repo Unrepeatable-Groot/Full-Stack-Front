@@ -16,6 +16,8 @@ import { MoviesPageComponent } from './movies/movies-page/movies-page.component'
 import { AnimationsPageComponent } from './animations/animations-page/animations-page.component';
 import { SerialsPageComponent } from './serials/serials-page/serials-page.component';
 import { MediaDetailsComponent } from './media-details/media-details.component';
+import { SearchedComponent } from './searched/searched.component';
+import { SearchedPageComponent } from './searched/searched-page/searched-page.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { MediaDetailsComponent } from './media-details/media-details.component';
     AnimationsPageComponent,
     SerialsPageComponent,
     MediaDetailsComponent,
+    SearchedComponent,
+    SearchedPageComponent,
   ],
   imports: [
     BrowserModule,

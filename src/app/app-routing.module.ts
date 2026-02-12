@@ -9,6 +9,7 @@ import { MoviesPageComponent } from './movies/movies-page/movies-page.component'
 import { SerialsPageComponent } from './serials/serials-page/serials-page.component';
 import { AnimationsPageComponent } from './animations/animations-page/animations-page.component';
 import { MediaDetailsComponent } from './media-details/media-details.component';
+import { SearchedPageComponent } from './searched/searched-page/searched-page.component';
 
 const routes: Routes = [
   {path:"", component:HomePageComponent},
@@ -28,6 +29,8 @@ const routes: Routes = [
   { path: 'movies/page/:page', component: MoviesPageComponent },
   { path: 'animations/page/:page', component: AnimationsPageComponent },
   { path: 'serials/page/:page', component: SerialsPageComponent },
+
+  { path: 'search', component: SearchedPageComponent }, 
 
   { path: ':type/:name', component: MediaDetailsComponent },
 

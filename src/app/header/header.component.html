@@ -20,9 +20,16 @@
 
     <div id="right">
        <a href="https://www.facebook.com/Moviesqartulad" target="_blank"><i class="fa-brands fa-square-facebook" id="Facebook"></i><span id="F-Text">Facebook</span></a>
-        <form>
-            <input type="text" placeholder="საძიებო სიტყვა..." required>
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <form (submit)="onSearch($event)">
+        <input type="text"
+                [(ngModel)]="searchQuery"
+                name="search"
+                placeholder="საძიებო სიტყვა..."
+                required>
+
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
         </form>
         <a routerLink="/logIn"><i class="fa-regular fa-user" id="Log-In"></i><span id="L-Text">Log-In</span></a>
 

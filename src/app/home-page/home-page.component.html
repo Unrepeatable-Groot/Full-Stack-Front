@@ -10,7 +10,7 @@
         <div class="middle">
         <a
             *ngFor="let item of movies"
-            [routerLink]="['/', item.type, item.name]"
+            [routerLink]="['/', item.type, item.name]" 
             [class]="item.class">
 
             <div class="card">

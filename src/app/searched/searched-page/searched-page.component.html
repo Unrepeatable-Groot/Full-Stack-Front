@@ -1,0 +1,30 @@
+<div class="box">
+
+  <a *ngFor="let item of results"
+     [routerLink]="[
+       item.type === 'movie' ? '/movies' :
+       item.type === 'animation' ? '/animations' :
+       '/serials',
+       item.name
+     ]">
+
+    <div class="card">
+      <img [src]="item.image" alt="Banner">
+      <div class="GEO"><span>GEO</span></div>
+      <div class="ENG"><span>ENG</span></div>
+      <div class="hover"></div>
+      <div class="button"></div>
+      <i class="fa-solid fa-play"></i>
+    </div>
+
+    <div class="title">
+      <p>{{ item.name }}</p>
+    </div>
+
+  </a>
+
+</div>
+
+<div *ngIf="results.length === 0">
+  <h2>ვერაფერი მოიძებნა</h2>
+</div>
