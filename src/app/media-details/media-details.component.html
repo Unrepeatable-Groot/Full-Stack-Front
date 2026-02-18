@@ -51,7 +51,7 @@
     <div class="middle">
       <a
         *ngFor="let item of relatedMedia"
-        [routerLink]="['/', type, item.name]">
+        [routerLink]="['/', type, item.name]" [class]="item.class">
         <div class="card">
           <img [src]="item.image" alt="Banner">
 
@@ -64,11 +64,8 @@
         </div>
       </a>
     </div>
-
     <div class="down">
-      <div class="title" *ngFor="let item of relatedMedia">
-        <p>{{ item.name }}</p>
-      </div>
+      <div class="title" *ngFor="let names of relatedMedia" [class]="names.class"><p>{{names.name}}</p></div>
     </div>
   </div>
 

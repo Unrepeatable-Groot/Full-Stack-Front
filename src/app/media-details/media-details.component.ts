@@ -9,6 +9,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MediaDetailsComponent implements OnInit {
 
+  private classes = ['A', 'B', 'C', 'D', 'E'];
+
   media: any;
   relatedMedia: any[] = [];
 
@@ -53,7 +55,11 @@ export class MediaDetailsComponent implements OnInit {
 
         this.relatedMedia = filtered
           .sort(() => Math.random() - 0.5)
-          .slice(0, 5);
+          .slice(0, 5)
+          .map((item, index) => ({
+            ...item,
+            class: this.classes[index]
+          }));
       },
       error: err => console.error(err)
     });
