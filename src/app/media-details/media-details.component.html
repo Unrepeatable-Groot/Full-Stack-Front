@@ -4,16 +4,10 @@
     <div class="left">
 
       <div class="card">
-        <img [src]="media.image || media.movieImage" alt="Banner">
-        <div class="GEO"><span>GEO</span></div>
-        <div class="ENG"><span>ENG</span></div>
-      </div>
-
-      <div id="left-down">
-        <button>თრეილერი</button>
+        <img [src]="media.image" alt="Banner">
       </div>
     </div> 
-
+ 
     <div class="right">
       <div class="video">
         <div class="loading"></div>
@@ -22,12 +16,15 @@
 
     <div class="bottom">
       <div class="descriptions">
+        <div id="card2">
+          <img [src]="media.image" alt="Banner">
+        </div>
         <p><span id="name">{{ media.name }}</span></p>
         <p><span>წელი: </span>{{ media.date }}</p>
         <p><span>ჟანრი: </span>{{ media.genre }}</p>
         <p><span>რეჟისორი: </span>{{ media.director }}</p>
         <p><span>მსახიობები: </span>{{ media.actors }}</p>
-        <p>
+        <p id="description">
           <span>მოკლე აღწერა: </span><br>
           {{ media.description }}
         </p>

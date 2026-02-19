@@ -329,14 +329,50 @@
 
         .inside {
             width: 599px;
+
             .middle {
+                height: auto;
+
                 .D {
-                  display: none;  
+                    display: none;  
+                }
+
+                a {
+                    width: clamp(95%, 25vw, 95%);
+                    aspect-ratio: 13 / 18;
+                    height: auto;
+                    margin: 0px;
+
+                    .card {
+                        width: 95%;
+                        height: 95%;
+                        border-radius: 10px;
+
+                        img {
+                            border-radius: 5px;
+                        }
+
+                        .GEO, .ENG {
+                            width: 30px;
+                            height: 20px;
+                            border-width: 2px;
+                            border-radius: 5px;
+                            
+                            span {
+                                font-size: 9px;
+                            }
+                        }
+                    }
                 }
             }
             .down {
                 .D {
                     display: none;  
+                }
+                .title {
+                    p {
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -346,14 +382,26 @@
     .main, .main2, .main3, .main4 {
         .inside {
             width: 550px;
-            .middle {
-                .card {
-                    height: 250px;
+            margin: 15px;
+
+            .up {
+                h2 {
+                    font-size: 13px;
+                }
+                div {
+                    i {
+                        font-size: 13px;
+                    }
                 }
             }
+
             .down {
+                width: auto;
+
                 .title {
-                    width: 180px;
+                    p {
+                        font-size: 10px;
+                    }
                 }
             }
         }
@@ -364,7 +412,7 @@
                 width: 390px;
             }
             .middle {
-                height: 200px;
+                height: auto;
 
                 .cards {
                     width: 310px;
@@ -376,60 +424,18 @@
         }
     }
 }
-@media screen and (max-width: 550px) {
+
+@media screen and (max-width: 560px) {
     .main, .main2, .main3, .main4 {
-        height: 400px;
+        height: auto;
 
         .inside {
             width: 450px;
-            height: 310px;
-
-            .middle {
-                height: 200px;
-                
-                .card {
-                    height: 190px;
-                }
-            }
-            .down {
-                .title {
-                    width: 180px;
-
-                    p {
-                        font-size: 15px;
-                    }
-                }
-            }
+            height: auto;
         }
     }
 }
-@media screen and (max-width: 460px) {
-    .main, .main2, .main3, .main4 {
-        height: 450px;
 
-        .inside {
-            width: 450px;
-            height: 400px;
-
-            .middle {
-                height: 280px;
-                
-                .card {
-                    height: 100%;
-                    width: 45%;
-                }
-                .C {
-                    display: none;
-                }
-            }
-            .down {
-                .C {
-                    display: none;
-                }
-            }
-        }
-    }
-}
 @media screen and (max-width: 440px) {
     .popular {
         .inside {
@@ -441,7 +447,7 @@
                 }
             }
             .middle {
-                height: 200px;
+                height: auto;
 
                 .cards {
                     width: 310px;
@@ -453,34 +459,30 @@
         }
     }
 }
+
 @media screen and (max-width: 440px) {
     .main, .main2, .main3, .main4 {
-        height: 450px;
+        height: auto;
 
         .inside {
             width: 100%;
-            height: 380px;
+            height: auto;
+            margin: 15px;
+            padding-left: 3%;
+            padding-right: 3%;
 
             .middle {
-                height: 260px;
+                height: auto;
             }
-        }
-    }
-}
-@media screen and (max-width: 370px) {
-    .main, .main2, .main3, .main4 {
-        height: 410px;
+            .down {
+                width: auto;
 
-        .inside {
-            width: 100%;
-            height: 320px;
-
-            .middle {
-                height: 230px;
-                
-                .card {
-                    height: 100%;
-                    width: 45%;
+                .title {
+                    margin-top: 0px;
+                    
+                    p {
+                        font-size: 8px;
+                    }
                 }
             }
         }
